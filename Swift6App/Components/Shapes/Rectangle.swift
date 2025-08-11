@@ -10,10 +10,18 @@ import SwiftUI
 
 struct RectangleShape: View {
     var body: some View {
-        Rectangle()
-            .fill(.yellow)
-            .border(.blue, width: 3)
-            .padding()
+        VStack(spacing: 5) {
+            Rectangle()
+                .fill(.yellow)
+                .border(.blue, width: 3)
+                .padding()
+            
+            RoundedRectangle(cornerRadius: 20)
+                .fill(.brown)
+                .stroke(.blue, style: StrokeStyle(lineWidth: 3))
+            //            .border(.blue, width: 3)
+                .padding()
+        }
             
     }
 }
