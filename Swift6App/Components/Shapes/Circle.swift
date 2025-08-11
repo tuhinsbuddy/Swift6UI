@@ -9,9 +9,17 @@ import SwiftUI
 
 struct CircleShape: View {
     var body: some View {
-        Circle().fill(.yellow)
-            .stroke(.blue, style: StrokeStyle(lineWidth: 3))
-            .padding()
+        VStack(spacing: 5) {
+            Circle().fill(.yellow)
+                .stroke(.blue, style: StrokeStyle(lineWidth: 3))
+                .padding()
+            
+            Circle()
+                .trim(from: 0.1, to: 0.7)
+//                .fill(.red)
+                .stroke(.black, style: .init(lineWidth: 10, lineCap: .butt, dash: [2, 2.5, 3, 3.5]))
+                .padding()
+        }
     }
 }
 
