@@ -1,5 +1,5 @@
 //
-//  Swift6AppApp.swift
+//  Swift6App.swift
 //  Swift6App
 //
 //  Created by Tuhin Samui on 08/08/25.
@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 @main
-struct Swift6AppApp: App {
+struct Swift6App: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,

@@ -14,7 +14,7 @@ struct VerticalStack: View {
     private let borderWidth: CGFloat = 3
     
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(alignment: .leading, spacing: 20) {
             Circle()
                 .fill(.orange)
                 .stroke(.red, style: .init(lineWidth: borderWidth))
