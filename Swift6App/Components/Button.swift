@@ -23,6 +23,11 @@ struct ButtonComponant : View {
                     .fontWeight(.heavy)
                     .foregroundStyle(.red)
             }
+            .frame(width: 300, height: 100)
+            .background(
+                RoundedRectangle(cornerRadius: 10)
+            )
+            .buttonStyle(.automatic)
         })
     }
 }
