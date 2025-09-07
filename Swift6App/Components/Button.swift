@@ -26,6 +26,9 @@ struct ButtonComponant : View {
             .frame(width: 300, height: 100)
             .background(
                 RoundedRectangle(cornerRadius: 10)
+                    .fill(Color.blue)
+                    .shadow(radius: 10, x: 0, y: 5)
+                
             )
             .buttonStyle(.automatic)
         })
