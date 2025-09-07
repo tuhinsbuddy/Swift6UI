@@ -12,7 +12,8 @@ struct Anime: View {
  @State var isAnimate: Bool = false
     var body: some View {
         ZStack() {
-            Color.black.ignoresSafeArea()
+            Color(isAnimate ? .green : .cyan)
+                .ignoresSafeArea()
             VStack() {
                 Spacer()
                 Text(isAnimate ? "Animated" : "Start").foregroundStyle(.white)
