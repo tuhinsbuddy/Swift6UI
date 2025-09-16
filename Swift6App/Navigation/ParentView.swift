@@ -22,6 +22,7 @@ struct ParentView: View {
                         .onTapGesture {
                             switch rows.firstIndex(of: row) {
                             case 0: //Child
+//                                navigationlin
                                 NavigationLink(value: "Hello From ParentView") {
                                     Text("Go to Child")
                                 }
@@ -39,7 +40,7 @@ struct ParentView: View {
                 }
             }
         }
-        .navigationDestination(for: <#T##Hashable.Type#>, destination: <#T##(Hashable) -> View#>)
+//        .navigationDestination(for: <#T##Hashable.Type#>, destination: <#T##(Hashable) -> View#>)
     }
 }
 
