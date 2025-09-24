@@ -8,8 +8,11 @@
 
 import Foundation
 
-struct S6Model: ObservableObject {
+class S6Model: ObservableObject {
     @Published var count: Int = 0
     
+    init(count: Int) {
+        self.count = count
+    }
     
 }
