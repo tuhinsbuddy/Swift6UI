@@ -9,9 +9,14 @@
 import Foundation
 
 class S6ViewModel: ObservableObject {
-    @Published private(set) var count: Int = 0
+    @Published private(set) var model: S6Model
+    
+    init(model: S6Model = S6Model()) {
+        self.model = model
+    }
     
     func increase() {
-        self.count += 1
+        self.model.count += 1
+//        objectWillChange.send()
     }
 }

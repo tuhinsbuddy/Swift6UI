@@ -9,9 +9,9 @@
 import Foundation
 
 class S6Model: ObservableObject {
-    @Published var count: Int = 0
+    var count: Int = 0
     
-    init(count: Int) {
+    init(count: Int = 0) {
         self.count = count
     }
     

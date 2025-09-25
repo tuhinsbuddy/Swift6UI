@@ -13,7 +13,7 @@ struct S6ChildView: View {
     var body: some View {
         Spacer()
         VStack(spacing: 10) {
-            Text("Counter is - \(self.viewModel.count)")
+            Text("Counter is - \(self.viewModel.model.count)")
                 .font(.system(size: 20))
                 .fontWeight(.bold)
             Button("Increase") {
