@@ -17,6 +17,6 @@ class S6ViewModel: ObservableObject {
     
     func increase() {
         self.model.count += 1
-//        objectWillChange.send()
+        objectWillChange.send()
     }
 }
